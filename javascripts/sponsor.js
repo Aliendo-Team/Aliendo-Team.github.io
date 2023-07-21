@@ -3,7 +3,7 @@ const computer_meun = document.querySelector('#computer-menu')
 const mobile_meun = document.querySelector('.hamburger-icon')
 const mobile_navbar = document.querySelector('.navbar')
 
-const photo = $('#photo')
+
 
 
 setInterval(() => {
@@ -24,5 +24,5 @@ setInterval(() => {
     }
  
  }, 0.5);
-
+ const photo = $('#photo')
 photo.poptrox
