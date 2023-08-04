@@ -1,0 +1,698 @@
+.home-body {
+    padding-bottom: 0;
+    margin: 0;
+    background-image: url('../images/bg.png');
+    background-position: center;
+    background-attachment: fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideOutRight {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    /* 将随意礦坑和随意星球的图片隐藏 */
+    .casual_pit img,
+    .casual-planet img {
+        display: none;
+    }
+}
+
+/* 响应式设计：当屏幕宽度小于或等于801px时 */
+@media screen and (max-width: 801px) {
+
+    /* 在移动设备上对标题进行调整 */
+    .title h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* 隐藏news部分 */
+    .news {
+        display: none;
+    }
+
+    /* 调整图片新闻的样式 */
+    .img-news {
+        display: none;
+    }
+
+    .img-news img {
+        display: none;
+    }
+
+    /* 调整工作人员介绍部分样式 */
+    .contributor {
+        padding-bottom: 10%;
+    }
+
+    .contributor h1 {
+        font-size: 40px;
+    }
+
+    /* 在移动设备上隐藏部分菜单项 */
+    .header nav select {
+        margin-top: 10px;
+    }
+
+    /* 调整主要内容区域的样式 */
+    .AV {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    background-color: #343A40;
+    align-items: center;
+    /* Center the items vertically */
+    justify-content: center;
+    /* Center the items horizontally */
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    line-height: 25px;
+    font-size: 0px;
+    margin-right: 5%;
+}
+
+.header nav a {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex; /* Use flexbox for better control */
+    align-items: center; /* Center the logo and h2 elements horizontally */
+  }
+  
+  .logo img {
+    margin-right: 10px; /* Add some spacing between the logo and the title */
+    width: 40px; /* Adjust the width of the logo as needed */
+    margin-left: 10%;
+  }
+  
+#title-msg {
+    white-space: nowrap;
+    color: white;
+    font-size: 26px;
+    margin-left: -50%;
+    margin: 0;
+    /* Remove any default margin */
+}
+
+.header nav select {
+    background-color: #343A40;
+    display: inline-block;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+
+
+.title {
+    padding-bottom: 20%;
+}
+
+.title-img img {
+    width: 100%;
+    height: 600px;
+
+}
+
+.news {
+    padding-bottom: 40%;
+}
+
+.news h1 {
+    font-size: 100px;
+    text-align: center;
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+code {
+    background-color: rgb(131, 131, 131);
+    border-radius: 5px;
+}
+
+.news .img-news {
+    float: left;
+    margin-left: 5%;
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: transparent;
+    border-radius: 20px;
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+
+
+}
+
+.img-news {
+    align-items: center;
+    justify-items: center;
+    display: block;
+    margin: auto;
+
+}
+
+.img-news img {
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.news .img-news .news-title {
+    position: absolute;
+    text-align: start;
+    margin-left: 2%;
+    margin-top: 45%;
+    color: white;
+    font-size: 64px;
+}
+
+.news .img-news .news-info {
+    position: absolute;
+
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+    text-align: start;
+    margin-left: 2%;
+    margin-top: 55%;
+}
+
+.title h2 {
+    font-size: 40px;
+    /* Adjust the font size of the title for larger screens */
+}
+
+.title-img {
+    position: relative;
+    /* Ensure the image and arrows are positioned relative to this container */
+}
+
+.arrows .arrow-left,
+.arrows .arrow-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Center the arrows vertically */
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.arrows .arrow-left {
+    left: 0;
+    /* Position the left arrow on the left side of the image */
+}
+
+.arrows .arrow-right {
+    right: 20px;
+    /* Position the right arrow on the right side of the image */
+}
+
+.arrows a:hover {
+    color: #0ef;
+    /* Change the arrow color on hover */
+}
+
+/* Optional: Customize the arrow icons */
+.arrows .arrow-left i,
+.arrows .arrow-right i {
+    width: 20px;
+}
+
+/* Optional: Adjust the arrow position for smaller screens */
+@media screen and (max-width: 801px) {
+
+    .arrows .arrow-left,
+    .arrows .arrow-right {
+        font-size: 20px;
+    }
+}
+
+.news-text {
+    color: white;
+    font-size: larger;
+    border-bottom: 20%;
+    float: right;
+    margin-right: 10%;
+    background-color: transparent;
+    border: rgb(174, 171, 171) solid 2px;
+    padding: 20px 20px 0 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.news-text a {
+    line-height: 42px;
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+
+    border-bottom: #fff dotted 2px;
+}
+
+.contributor {
+    padding-bottom: 20%;
+}
+
+.contributor h1 {
+    margin-top: 20%;
+    word-wrap: break-word;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+}
+
+.contributor .infobox {
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    width: 253px;
+    height: 380px;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    border: grey solid 1.5px;
+}
+
+.contributor .infobox h2 {
+    font-size: 30px;
+}
+
+.AV {
+    height: 450px;
+    width: 100%;
+}
+
+.AV .line {
+    margin-left: 6%;
+    margin-top: 22%;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+.AV .title {
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+.AV .info {
+    margin-top: -23%;
+    text-align: center;
+    color: rgb(186, 186, 186);
+    font-size: 16px;
+
+}
+
+.casual_pit {
+    margin-left: 5%;
+    width: 70%;
+    height: 200%;
+    border-left: white solid 2px;
+    padding: 20px;
+    border-radius: 0 0 0 20px;
+}
+
+.casual_pit h1 {
+    font-size: 72px;
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.casual_pit p {
+    color: rgb(219, 219, 219);
+    margin-top: -5%;
+    font-size: 20px;
+    margin-bottom: 10%;
+}
+
+.casual_pit .feature {
+    margin-right: 30px;
+    margin-bottom: 3%;
+    float: left;
+    display: flex;
+    height: 70px;
+    width: 250px;
+    background-color: #343A40;
+    border-radius: 10px;
+    color: white;
+}
+
+.casual_pit img {
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+}
+
+.casual_pit .feature h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.feature .icon {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    border-radius: 50%;
+    height: 70%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.casual-planet {
+    margin-right: 5%;
+    /* 将margin-left改为margin-right */
+    width: 90%;
+    height: 200%;
+    border-right: white solid 2px;
+    /* 将border-left改为border-right */
+    padding: 20px;
+    border-radius: 0 20px 0 0;
+    /* 调整border-radius值以实现右边圆角 */
+    text-align: right;
+    /* 添加text-align属性，将内容右对齐 */
+}
+
+.casual-planet h1 {
+    font-size: 72px;
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: right;
+    /* 添加text-align属性，将标题右对齐 */
+}
+
+.casual-planet p {
+    color: rgb(219, 219, 219);
+    font-size: 20px;
+    margin-bottom: 10%;
+    text-align: right;
+    /* 添加text-align属性，将段落右对齐 */
+}
+
+.casual-planet .feature {
+    margin-left: 30px;
+    /* 将margin-right改为margin-left */
+    margin-bottom: 3%;
+    float: right;
+    /* 将float值从left改为right */
+    display: flex;
+    height: 70px;
+    width: 250px;
+    background-color: #343A40;
+    border-radius: 10px;
+    color: white;
+}
+
+.casual-planet img {
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+    animation: rainbow 2.5s linear;
+    animation-iteration-count: infinite;
+    float: right;
+    /* 添加float属性，将图像右对齐 */
+}
+
+
+.casual-planet .feature h2 {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.feature .icon {
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 2%;
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    border-radius: 50%;
+    height: 70%;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.bottom {
+    position: absolute;
+    top: 783%;
+    width: 100%;
+    height: 75px;
+    background-color: black;
+
+}
+
+.bottom h3 {
+    color: #fff;
+}
+
+
+.AV2 {
+    height: 450px;
+}
+
+.AV2 .line {
+    margin-left: 6%;
+    margin-top: 22%;
+    width: 2px;
+    height: 200px;
+    position: absolute;
+
+    background: #12c2e9;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    background: -webkit-linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+}
+
+
+
+@keyframes rainbow {
+
+    100%,
+    0% {
+        border: 2px rgb(255, 0, 0)solid;
+    }
+
+    8% {
+        border: 2px rgb(255, 127, 0) solid;
+    }
+
+    16% {
+        border: 2px rgb(255, 255, 0) solid;
+    }
+
+    25% {
+        border: 2px rgb(127, 255, 0) solid;
+    }
+
+    33% {
+        border: 2px rgb(0, 255, 0) solid;
+    }
+
+    41% {
+        border: 2px rgb(0, 255, 127) solid;
+    }
+
+    50% {
+        border: 2px rgb(0, 255, 255) solid;
+    }
+
+    58% {
+        border: 2px rgb(0, 127, 255) solid;
+    }
+
+    66% {
+        border: 2px rgb(0, 0, 255) solid;
+    }
+
+    75% {
+        border: 2px rgb(127, 0, 255) solid;
+    }
+
+    83% {
+        border: 2px rgb(255, 0, 255) solid;
+    }
+
+    91% {
+        border: 2px #ff007f solid;
+    }
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+.hamburger-icon {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    transition: background-color 1s ease;
+}
+
+.hamburger-checkbox:checked+.hamburger-icon .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-checkbox:checked+.hamburger-icon .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-checkbox:checked+.hamburger-icon .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+.navbar {
+    display: none;
+}
+
+.hamburger-checkbox:checked~.header .navbar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(48, 48, 48, 0.9);
+    z-index: 998;
+}
+
+.hamburger-checkbox:checked~.header .navbar a {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
