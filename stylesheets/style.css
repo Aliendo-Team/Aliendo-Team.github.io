@@ -291,7 +291,7 @@ code {
     top: 50%;
     transform: translateY(-50%);
     /* Center the arrows vertically */
-    color: white;
+    color: #0ef;
     font-size: 24px;
     transition: all 0.3s ease;
     cursor: pointer;
