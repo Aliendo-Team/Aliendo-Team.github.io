@@ -7,9 +7,9 @@ var mobile_meun = document.querySelector('.hamburger-icon')
 
 var mobile_navbar = document.querySelector('.navbar')
 var hamburger_checkbox = document.querySelector('#hamburger-checkbox')
-function handleSelect(elm) {
+/*function handleSelect(elm) {
    window.location = "./SelectHtmls" + "/" + elm.value + ".html";
-}
+}*/
 
 //最新活動資訊在這裡改
 var title = ['R冷屁股', 'R冷非常帥', '沒有騙人', 'ee']
